@@ -56,13 +56,38 @@ body {
   border: thin solid transparent;
 }
 
-@media(max-width:680px){
+@media(max-width:650px){
   .wrapper{
-    width: 90%;
+    width: 80%;
     height: auto;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 50% 50%;
   }
 
-  .keyboard{
+  .drum-pad{
+    width: 25%;
+    height: 25%;
+  }
+
+  .btn-controler{
+    padding:5px 15px;
   }
   
 }
+
+
+@media(max-width:400px){
+  .wrapper{
+    width: 80%;
+    height: auto;
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  .drum-pad{
+    width: 25%;
+    height: 50px;
+  }
+  
+} 
